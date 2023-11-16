@@ -3,69 +3,107 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="public/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="public/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="public/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="public/favicon/site.webmanifest" />
     <link rel="stylesheet" href="./styles.css" />
-    <title>Junypyr Nealy</title>
+    <title>Junypyr Nealy | Web Developer</title>
   </head>
   <body>
-<header>
-  <div class="container">
-    <nav class="nav flex">
-      <ul class="nav__list">
-        <li class="nav__item"><a href="#" class="nav__link">HOME</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">ABOUT</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">CONTACT</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">SIGN IN</a></li>
-        <li class="nav__item"><a href="#" class="nav__link nav__link--button">SIGN UP</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-    <section class="hero">
-      <div class="container flex">
-        <div class="hero__text">
-          <h1>Responsive layouts don't have to be a struggle</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatibus qui fuga culpa distinctio nam voluptate nobis harum?
-            Dolorum eligendi, inventore recusandae quibusdam at repellendus ea
-            ex, modi quam non doloremque? Veritatis at ipsam ab itaque
-            recusandae totam ducimus
-          </p>
-          <a class="btn" href="">I want to learn</a>
-        </div>
-        <div class="hero__img"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.welcomewildlife.com%2Fwp-content%2Fuploads%2F2015%2F01%2FFrog-compare.jpg&f=1&nofb=1&ipt=57f2d8055f24d3417dd4bd8a4457ae2ec1d149a94dcd27611731a9e00f9d073c&ipo=images" alt=""></div>
+    <section class="hero flex">
+      <div class="container flex row">
+        <p class="hero__text">
+          Hello, I'm <span class="hero__text highlight">Junypyr</span>.
+        </p>
+        <p class="hero__text">I'm a front end web developer.</p>
       </div>
     </section>
-    <main class="main container flex">
-          <section class="primary-content">
-            <h2 class="subtitle subtitle--accent">Quality designs made custom, on demand, just for you</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-            </p>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam.
-            </p>
-          </section>
-      <aside class="sidebar">
-            <div class="sidebar__item">
-              <h2 class="subtitle subtitle--light">cheap</h2>
-              <p>
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              </p>
-            </div>
-            <div class="sidebar__item">
-              <h2 class="subtitle subtitle--light">quick</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              </p>
-            </div>
-            <div class="sidebar__item">
-              <h2 class="subtitle subtitle--light">affordable</h2>
-              <p>
-             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              </p>
-            </div>
-        </aside>
-    </main>
-    </div>
+    <section class="section flex row">
+      <div class="container flex row">
+        <h2 class="section--title">About</h2>
+        <img
+          class="profile"
+          src="./Public/image/profile-svgrepo-com.svg"
+          alt=""
+        />
+        <p class="section--text">
+          I'm a web developer commited to the philosophy of life-long learning,
+          with a deep passion for JavaScript, CSS, and all things related to
+          front end development. I find web developments unique need for
+          creativity, logic, and no shortage of new technologies to learn drives
+          my passion for the web and web devolopment. When I'm not at my
+          computer I like to spend my time reading, writing, and playing
+          table-top games.
+        </p>
+      </div>
+      <div class="container technologies flex">
+        <div class="technologies__item flex row">
+          <img src="./Public/image/icons8-html5.svg" alt="HTML 5 Logo" />
+          <p class="section--text">HTML</p>
+        </div>
+      </div>
+      <div class="container technologies">
+        <div class="technologies__item flex row">
+          <img src="./Public/image/icons8-css3.svg" alt="CSS 3 Logo" />
+          <p class="section--text">CSS</p>
+        </div>
+      </div>
+      <div class="container technologies">
+        <div class="technologies__item flex row">
+          <img
+            src="./Public/image/icons8-javascript.svg"
+            alt="JavaScript Logo"
+          />
+          <p class="section--text">JavaScript</p>
+        </div>
+      </div>
+      <div class="container technologies">
+        <div class="technologies__item flex row">
+          <img src="./Public/image/icons8-nodejs.svg" alt="NodeJS Logo" />
+          <p class="section--text">Node Js</p>
+        </div>
+      </div>
+    </section>
+    <section class="section flex row">
+      <div class="container flex row">
+        <h2 class="section--title">Contact</h2>
+        <img src="" alt="" />
+        <p class="section--text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ea natus
+          atque numquam vitae architecto maxime, commodi nesciunt alias
+          accusamus sunt deleniti eos dolorum, aut, laudantium et obcaecati
+          aliquid corrupti facilis non blanditiis odit temporibus. Deserunt
+          labore cumque, doloremque commodi fugiat dolorum tempore asperiores
+          ipsum repudiandae blanditiis. Porro eveniet voluptate nesciunt
+          consequuntur ad quibusdam laboriosam saepe nostrum velit esse
+          inventore, soluta ex excepturi consectetur blanditiis corrupti nemo
+          quae nam libero aut earum totam! Cupiditate natus obcaecati quibusdam
+          quam placeat, ex et tempore blanditiis fugiat numquam inventore, dicta
+          quos aspernatur voluptate eius perspiciatis maiores architecto eos!
+          Aliquid, ratione! Velit, tempore ut.
+        </p>
+      </div>
+    </section>
   </body>
 </html>
