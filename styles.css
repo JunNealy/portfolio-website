@@ -173,20 +173,28 @@ img {
 }
 
 .hero__cta {
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-family: 'Roboto', sans-serif;
+  padding: 0.5rem 0.75rem;
   background-color: none;
   display: inline-block;
-  border: none;
-  padding: 1rem 2rem;
-  margin: 0;
+  margin-top: 1rem;
   text-decoration: none;
   background: transparent;
-  color: #ffffff;
+  color: rgb(111, 168, 220);
   font-family: sans-serif;
-  font-size: 1rem;
+  font-size: 1.25rem;
   cursor: pointer;
   text-align: center;
   transition: background 250ms ease-in-out, transform 150ms ease;
   -webkit-appearance: none;
   -moz-appearance: none;
-  border: 2px solid rgb(111, 168, 220);
+  border: 3px solid rgb(111, 168, 220);
+}
+
+.hero__cta__icon {
+  align-self: center;
+  width: 1.25rem;
+  height: 1.25rem;
 }
