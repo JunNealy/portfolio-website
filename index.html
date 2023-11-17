@@ -31,19 +31,40 @@
     <title>Junypyr Nealy | Web Developer</title>
   </head>
   <body>
-    <section class="hero flex">
+    <header class="header flex row">
+      <nav class="navbar container">
+        <ul class="navabr__list flex row section--text">
+          <li class="navbar__list--item">
+            <a class="navbar__list--item--link" href="#hero">Home</a>
+          </li>
+          <li class="navbar__list--item">
+            <a class="navbar__list--item--link" href="#about">About</a>
+          </li>
+          <li class="navbar__list--item">
+            <a class="navbar__list--item--link" href="#projects">Projects</a>
+          </li>
+          <li class="navbar__list--item">
+            <a class="navbar__list--item--link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero section flex" id="hero">
       <div class="container flex row">
         <p class="hero__text">
           Hello, I'm <span class="hero__text highlight">Junypyr</span>.
         </p>
         <p class="hero__text">I'm a front end web developer.</p>
+        <button class="hero__cta">dog</button>
       </div>
     </section>
-    <section class="section flex row">
+
+    <section class="section" id="about">
       <div class="container flex row">
         <h2 class="section--title">About</h2>
         <img
-          class="profile"
+          class="about__image"
           src="./Public/image/profile-svgrepo-com.svg"
           alt=""
         />
@@ -57,53 +78,123 @@
           table-top games.
         </p>
       </div>
+
       <div class="container technologies flex">
         <div class="technologies__item flex row">
           <img src="./Public/image/icons8-html5.svg" alt="HTML 5 Logo" />
-          <p class="section--text">HTML</p>
+          <p class="technologies__item--text">HTML</p>
         </div>
-      </div>
-      <div class="container technologies">
-        <div class="technologies__item flex row">
-          <img src="./Public/image/icons8-css3.svg" alt="CSS 3 Logo" />
-          <p class="section--text">CSS</p>
-        </div>
-      </div>
-      <div class="container technologies">
+
         <div class="technologies__item flex row">
           <img
+            class="technologies__item__image"
+            src="./Public/image/icons8-css3.svg"
+            alt="CSS 3 Logo"
+          />
+          <p class="technologies__item--text">CSS</p>
+        </div>
+
+        <div class="technologies__item flex row">
+          <img
+            class="technologies__item__image"
             src="./Public/image/icons8-javascript.svg"
             alt="JavaScript Logo"
           />
-          <p class="section--text">JavaScript</p>
+          <p class="technologies__item--text">JavaScript</p>
         </div>
-      </div>
-      <div class="container technologies">
+
         <div class="technologies__item flex row">
-          <img src="./Public/image/icons8-nodejs.svg" alt="NodeJS Logo" />
-          <p class="section--text">Node Js</p>
+          <img
+            class="technologies__item__image"
+            src="./Public/image/icons8-react.svg"
+            alt="React Logo"
+          />
+          <p class="technologies__item--text">React</p>
+        </div>
+
+        <div class="technologies__item flex row">
+          <img
+            class="technologies__item__image"
+            src="./Public/image/icons8-nodejs.svg"
+            alt="Node.js Logo"
+          />
+          <p class="technologies__item--text">Node.js</p>
+        </div>
+
+        <div class="technologies__item flex row">
+          <img
+            class="technologies__item__image"
+            src="./Public/image/express.1eca086d2a78b4be3dd1f0a47b84b618 (Small).png"
+            alt="Express Logo"
+          />
+          <p class="technologies__item--text">Express</p>
+        </div>
+
+        <div class="technologies__item flex row">
+          <img
+            class="technologies__item__image"
+            src="./Public/image/icons8-mongodb-a-cross-platform-document-oriented-database-program-24.png"
+            alt="MongoDB Logo"
+          />
+          <p class="technologies__item--text">MongoDB</p>
+        </div>
+
+        <div class="technologies__item flex row">
+          <img
+            class="technologies__item__image"
+            src="./Public/image/icons8-bootstrap-logo.svg"
+            alt="Bootstrap Logo"
+          />
+          <p class="technologies__item--text">Bootstrap</p>
         </div>
       </div>
     </section>
-    <section class="section flex row">
+
+    <section class="section" id="contact">
       <div class="container flex row">
         <h2 class="section--title">Contact</h2>
         <img src="" alt="" />
         <p class="section--text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ea natus
-          atque numquam vitae architecto maxime, commodi nesciunt alias
-          accusamus sunt deleniti eos dolorum, aut, laudantium et obcaecati
-          aliquid corrupti facilis non blanditiis odit temporibus. Deserunt
-          labore cumque, doloremque commodi fugiat dolorum tempore asperiores
-          ipsum repudiandae blanditiis. Porro eveniet voluptate nesciunt
-          consequuntur ad quibusdam laboriosam saepe nostrum velit esse
-          inventore, soluta ex excepturi consectetur blanditiis corrupti nemo
-          quae nam libero aut earum totam! Cupiditate natus obcaecati quibusdam
-          quam placeat, ex et tempore blanditiis fugiat numquam inventore, dicta
-          quos aspernatur voluptate eius perspiciatis maiores architecto eos!
-          Aliquid, ratione! Velit, tempore ut.
+          Have a question or want to work together? Leave your details and I'll
+          get back to you as soon as possible.
         </p>
+
+        <form class="contact" action="">
+          <input
+            class="form__input"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+          />
+          <input
+            class="form__input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+          />
+          <textarea
+            class="form__input"
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Message"
+          ></textarea>
+        </form>
       </div>
     </section>
+    <footer class="footer">
+      <div class="container flex row">
+        <a href="">
+          <img src="./Public/image/icons8-github-30.png" alt="" />
+        </a>
+        <a href="">
+          <img src="./Public/image/icons8-email-50.png" alt="" />
+        </a>
+        <p>Junypyr Nealy ©2023</p>
+      </div>
+    </footer>
   </body>
 </html>
