@@ -1,0 +1,4 @@
+todo 
+- hero cta icon fill change on hover
+- optimize for 320 pixle min
+-why is contact breaking wide?? or why is everything else small??
