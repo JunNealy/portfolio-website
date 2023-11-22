@@ -202,6 +202,20 @@ img {
   width: 64px;
 }
 
+#canvas1 {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(26, 26, 26);
+}
+
+#hero {
+  z-index: 1;
+}
+
 /* || Small Screen Break || */
 @media only screen and (min-width: 600px) {
   /* typography */
