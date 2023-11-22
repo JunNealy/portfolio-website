@@ -115,7 +115,11 @@ img {
 .navabr__list {
   list-style: none;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
+}
+
+.navbar__list--item + .navbar__list--item {
+  margin-left: 1rem;
 }
 
 /* || hero styling || */
