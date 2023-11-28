@@ -128,6 +128,7 @@ window.addEventListener('resize', function () {
   init();
 });
 
+// remove last recorded mosue position after leaving window
 window.addEventListener('mouseout', function () {
   mouse.x = undefined;
   mouse.y = undefined;

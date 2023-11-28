@@ -1,4 +1,15 @@
 /* || resets/genera || */
+:root {
+  --brand-key: #468fd2;
+  --section-title-highlight: #468fd2;
+  --gradient: linear-gradient(#468fd2, #b698f6ff) 10;
+  --dark-bg: rgb(26, 26, 26);
+  --header-bg: rgba(40, 40, 40, 0.7);
+}
+
+html {
+  scroll-behavior: smooth;
+}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -6,7 +17,7 @@
 }
 
 body {
-  background-color: rgb(26, 26, 26);
+  background-color: var(--dark-bg);
   margin: 0;
   font-family: 'Playfair Display', serif;
   font-family: 'Roboto', sans-serif;
@@ -35,13 +46,14 @@ img {
 
 .section {
   margin: 0 auto;
-  background-color: rgb(26, 26, 26);
   margin-bottom: 4rem;
 }
 
 /* typography */
 .cta__text {
   font-size: 1.25rem;
+  display: flex;
+  align-items: center;
 }
 
 .footer__text {
@@ -64,7 +76,7 @@ img {
 }
 
 .navbar__list--item--link:hover {
-  color: rgb(111, 168, 220);
+  color: var(--brand-key);
   text-decoration: none;
 }
 
@@ -77,9 +89,22 @@ img {
 }
 
 .section--title {
+  position: relative;
   font-weight: bolder;
   font-size: 3rem;
   margin: 3.5rem 0 2.5rem 0;
+  z-index: 1;
+}
+
+.section--title::after {
+  content: '';
+  position: absolute;
+  left: 25%;
+  top: 60%;
+  width: 85%;
+  height: 20px;
+  background-color: var(--section-title-highlight);
+  z-index: -1;
 }
 
 .navbar__list--item--link {
@@ -88,7 +113,7 @@ img {
 }
 
 .highlight {
-  color: rgb(111, 168, 220);
+  color: var(--section-title-highlight);
 }
 
 .technologies__item--text {
@@ -99,20 +124,23 @@ img {
 
 /* || header/navbar styling || */
 .header {
+  z-index: 20;
   align-items: center;
   min-height: 3rem;
-  background-color: rgba(40, 40, 40, 0.8);
+  background-color: var(--header-bg);
   position: fixed;
   width: 100vw;
   backdrop-filter: blur(20px);
 }
 
 .header__container {
+  z-index: inherit;
   margin: 0 auto;
   width: 60%;
 }
 
 .navabr__list {
+  z-index: inherit;
   list-style: none;
   flex-direction: row;
   justify-content: space-evenly;
@@ -129,8 +157,8 @@ img {
 }
 
 .hero__cta {
-  border: 3px solid rgb(111, 168, 220);
-  color: rgb(111, 168, 220);
+  border: 3px solid var(--brand-key);
+  color: var(--brand-key);
   cursor: pointer;
   margin-top: 1em;
   padding: 0.25em 1em;
@@ -139,7 +167,7 @@ img {
 }
 
 .hero__cta:hover {
-  background-color: rgb(111, 168, 220);
+  background-color: var(--brand-key);
   color: white;
   fill: white;
 }
@@ -165,7 +193,7 @@ img {
 .technologies__item {
   padding: 0.5rem 0.75rem;
   align-items: center;
-  border-image: linear-gradient(#6fa8dc, #b698f6ff) 10;
+  border-image: var(--gradient);
   border-width: 2px;
   border-style: solid;
   height: 100%;
@@ -220,7 +248,32 @@ img {
   z-index: 1;
 }
 
+.fa-arrow-down {
+  font-size: 1rem;
+  padding-left: 0.5em;
+}
+
+/* ------------------------------ */
+/* || XSmall Screen Break || */
+/* ------------------------------ */
+
+@media only screen and (max-width: 400px) {
+  .technologies__item {
+    padding: 0.25em 0.2em;
+  }
+
+  .technologies__item__image {
+    width: 24px;
+    height: 24px;
+  }
+  .technologies__item--text {
+    font-size: 0.5rem;
+  }
+}
+
+/* ------------------------------ */
 /* || Small Screen Break || */
+/* ------------------------------ */
 @media only screen and (min-width: 600px) {
   /* typography */
 
@@ -266,7 +319,9 @@ img {
   }
 }
 
+/* ------------------------------ */
 /* || Medium Screen Break || */
+/* ------------------------------ */
 @media only screen and (min-width: 900px) {
   .container {
     width: 80%;
@@ -359,5 +414,73 @@ img {
   .footer__image {
     height: 64px;
     width: 64px;
+  }
+}
+
+/* ------------------------------ */
+/* || large display break|| */
+/* ------------------------------ */
+@media only screen and (min-width: 1200px) {
+  .split-divs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  /* || About Styling || */
+
+  .technologies__item {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .technologies__item__image {
+    width: 36px;
+    height: 36px;
+  }
+
+  /* || Contact Styling || */
+  .form__input {
+    background-color: rgb(40, 40, 40);
+    border: none;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    margin: 0.125rem 0;
+    padding: 0.25rem 0.5em;
+    resize: none;
+    width: 100%;
+  }
+
+  /* || Footer Styling || */
+  .footer {
+    height: 10rem;
+    background-color: rgb(40, 40, 40);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer__image {
+    height: 64px;
+    width: 64px;
+  }
+
+  #canvas1 {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(26, 26, 26);
+  }
+
+  #hero {
+    z-index: 1;
+  }
+
+  .split {
+    max-width: 40%;
   }
 }
