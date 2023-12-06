@@ -63,8 +63,8 @@ class Particle {
       }
     }
     //move non colided particle
-    this.x += this.directionX / 4;
-    this.y += this.directionY / 4;
+    this.x += this.directionX / 8;
+    this.y += this.directionY / 8;
     //draw particle
     this.draw();
   }
@@ -74,6 +74,7 @@ class Particle {
 function init() {
   particlesArray = [];
   let numberOfParticles = (canvas.height * canvas.width) / 20000;
+  const num = Math.floor(Math.random() * 10 + 1);
   for (let i = 0; i < numberOfParticles; i++) {
     let size = Math.random() * 3 + 1;
     let x = Math.random() * (innerWidth - size * 2 - size * 2) + size * 2;

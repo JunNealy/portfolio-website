@@ -87,6 +87,13 @@ img {
   margin-bottom: 4rem;
   max-width: 85ch;
 }
+.contact--text {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  margin-bottom: 2rem;
+  max-width: 85ch;
+}
 
 .section--title {
   position: relative;
@@ -221,6 +228,26 @@ img {
   width: 100%;
 }
 
+.contact__cta {
+  border: 3px solid var(--brand-key);
+  color: var(--brand-key);
+  cursor: pointer;
+  margin-top: 1em;
+  padding: 0.25em 1em;
+  text-decoration: none;
+  transition: 1s;
+}
+
+.contact__cta:hover {
+  background-color: var(--brand-key);
+  color: white;
+  fill: white;
+}
+
+.ml-1 {
+  margin-left: 1em;
+}
+
 /* || Footer Styling || */
 .footer {
   height: 10rem;
@@ -232,6 +259,17 @@ img {
 .footer__image {
   height: 64px;
   width: 64px;
+}
+
+.footer__links {
+  margin-bottom: 1em;
+}
+
+.footer__link {
+  text-decoration: none;
+}
+.footer__link + .footer__link {
+  margin-left: 1em;
 }
 
 #canvas1 {
