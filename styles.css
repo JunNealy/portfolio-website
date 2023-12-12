@@ -56,6 +56,10 @@ img {
   align-items: center;
 }
 
+.fa-arrow-down {
+  margin-left: 0.5em;
+}
+
 .footer__text {
   font-size: 1rem;
 }
@@ -133,17 +137,20 @@ img {
 .header {
   z-index: 20;
   align-items: center;
-  min-height: 3rem;
   background-color: var(--header-bg);
   position: fixed;
   width: 100vw;
   backdrop-filter: blur(20px);
 }
 
-.header__container {
+.navbar {
+  display: flex;
   z-index: inherit;
   margin: 0 auto;
   width: 60%;
+  height: 3em;
+  justify-content: center;
+  align-items: center;
 }
 
 .navabr__list {
@@ -272,7 +279,7 @@ img {
   margin-left: 1em;
 }
 
-#canvas1 {
+#particles {
   z-index: -1;
   position: absolute;
   top: 0;
@@ -286,23 +293,29 @@ img {
   z-index: 1;
 }
 
-.project-container {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  border: 2px solid coral;
-  position: relative;
+.project {
+  margin-bottom: 1em;
+  margin: 2em 2em;
+  max-width: 20rem;
   background: rgba(40, 40, 40, 0.7);
-  /* justify-content: center; */
-  align-items: center;
   transition: 2.5s;
   overflow: hidden;
   -webkit-filter: grayscale(20%); /* Safari 6.0 - 9.0 */
   filter: grayscale(20%);
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+
   z-index: 1;
 }
 
-.project-container:hover {
+.project:hover {
   border-radius: 3em 1.5em;
   -webkit-filter: none; /* Safari 6.0 - 9.0 */
   filter: none;
@@ -373,7 +386,7 @@ img {
   }
 
   /* || header/navbar styling || */
-  .header__container {
+  .navbar {
     width: 50%;
   }
 
@@ -458,11 +471,11 @@ img {
   }
 
   /* || header/navbar styling || */
-  .header__container {
+  .navbar {
     width: 90%;
   }
 
-  .navabr__list {
+  .navabr {
     justify-content: flex-end;
   }
 
@@ -511,6 +524,10 @@ img {
 .split-divs {
   width: 100%;
   justify-content: space-between;
+}
+
+.project-container {
+  flex-direction: row;
 }
 
 /* ------------------------------ */
