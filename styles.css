@@ -357,6 +357,10 @@ img {
   );
 }
 
+#projects {
+  flex-direction: column;
+}
+
 /* ------------------------------ */
 /* || XSmall Screen Break || */
 /* ------------------------------ */
@@ -364,6 +368,10 @@ img {
 @media only screen and (max-width: 400px) {
   .technologies__item {
     padding: 0.25em 0.2em;
+  }
+  .project-card-container {
+    display: flex;
+    flex-direction: column;
   }
 
   .technologies__item__image {
@@ -530,6 +538,11 @@ img {
   display: flex;
   flex-direction: row;
   width: 100%;
+}
+
+.project-card-container {
+  display: flex;
+  flex-direction: row;
 }
 
 /* ------------------------------ */
