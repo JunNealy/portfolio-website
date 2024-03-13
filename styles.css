@@ -167,7 +167,7 @@ img {
 /* || hero styling || */
 .hero--section {
   align-items: center;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 
 .hero__cta {
