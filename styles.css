@@ -114,11 +114,14 @@ body {
   position: fixed;
   width: 100vw;
   backdrop-filter: blur(20px);
+  font-size: 1rem;
+  justify-content: center;
 }
 
 .nav {
   z-index: inherit;
   width: 100%;
+  max-width: 800px;
   height: 3em;
   justify-content: center;
   align-items: center;
@@ -137,6 +140,14 @@ body {
   color: var(--text-light);
   text-decoration: none;
 }
+
+
+@media only screen and (min-width: 900px) {
+.header {
+  font-size: 1.5rem;
+}
+}
+
 
 /* || resets/genera || */
 /* 
