@@ -135,7 +135,7 @@ img {
 
 /* || header/navbar styling || */
 .header {
-  z-index: 20;
+  z-index: 100;
   align-items: center;
   background-color: var(--header-bg);
   position: fixed;
