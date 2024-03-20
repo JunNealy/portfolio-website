@@ -89,9 +89,6 @@ textarea:not([rows]) {
   --text-light: white;
 }
 
-
-
-
 /* -------------------- */
 /* General Styling */
 /* -------------------- */
@@ -108,6 +105,11 @@ body {
   color: var(--text-light);
 }
 
+#main {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
 
 /* -------------------- */
 /* Utility Classes */
@@ -119,7 +121,7 @@ body {
 .section__container {
   min-height: 100vh;
   display: flex;
-    width: 90%;
+  width: 90%;
   max-width: 1500px;
   flex-direction: column;
   align-items: center;
@@ -129,6 +131,7 @@ body {
 .highlight{
   color: var(--brand-key);
 }
+
 
 
 /* -------------------- */
@@ -177,19 +180,19 @@ body {
 }
 
 
-
-.hero-typography {
+.hero-text {
   font-size: 2rem;
   font-weight: 300;
   line-height: 2.5rem;
   text-align: center;
 }
 
-.hero-cta-typography {
 
-}
 
 .hero__cta {
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
   border: 3px solid var(--brand-key);
   color: var(--brand-key);
   cursor: pointer;
@@ -199,6 +202,9 @@ body {
   transition: 1s;
 }
 
+.fa-arrow-down {
+  margin-left: 0.5em;
+}
 .hero__cta:hover {
   background-color: var(--brand-key);
   color: var(--text-light)
@@ -228,19 +234,11 @@ body {
   margin-bottom: 4rem;
 } */ 
 
-/* typography */
-/* .cta__text {
-  font-size: 1.25rem;
-  display: flex;
-  align-items: center;
-}
 
-.fa-arrow-down {
-  margin-left: 0.5em;
-}
 
-.footer__text {
-  font-size: 1rem;
+
+/* .footer__text {
+  /* font-size: 1rem;
 }
 
 .hero__text {
@@ -306,7 +304,7 @@ body {
   font-size: 0.75rem;
   font-weight: 600;
   color: white;
-} */
+} */ */ */
 
 /* || header/navbar styling || */
 /* .navbar__list--item + .navbar__list--item {
