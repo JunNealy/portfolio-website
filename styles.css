@@ -107,7 +107,8 @@ body {
 
 #main {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   width: 100vw;
 }
 
@@ -121,7 +122,7 @@ body {
 .section__container {
   min-height: 100vh;
   display: flex;
-  width: 90%;
+  width: 85%;
   max-width: 1500px;
   flex-direction: column;
   align-items: center;
@@ -132,7 +133,44 @@ body {
   color: var(--brand-key);
 }
 
+.section--text {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  margin-bottom: 4rem;
+  max-width: 85ch;
+}
 
+.section__title {
+  position: relative;
+  font-weight: bolder;
+  font-size: 3rem;
+  margin: 3.5rem 0 2.5rem 0;
+  z-index: 1;
+}
+
+.section__title::after {
+  content: '';
+  position: absolute;
+  left: 25%;
+  top: 60%;
+  width: 85%;
+  height: 20px;
+  background-color: var(--brand-key);
+  z-index: -1;
+}
+
+.split {
+  display: flex;
+  flex-direction: column;
+}
+
+.split__div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 /* -------------------- */
 /* Header Styling */
@@ -169,6 +207,14 @@ body {
   text-decoration: none;
 }
 
+.nav__link:hover {
+  color: var(--brand-key)
+}
+
+
+/* -------------------- */
+/* Hero Styling */
+/* -------------------- */
 #particles {
   z-index: -1;
   position: absolute;
@@ -179,15 +225,12 @@ body {
   background: rgb(26, 26, 26);
 }
 
-
 .hero-text {
   font-size: 2rem;
   font-weight: 300;
   line-height: 2.5rem;
   text-align: center;
 }
-
-
 
 .hero__cta {
   font-size: 1.25rem;
@@ -215,6 +258,59 @@ body {
   max-height: 1.25rem;
 } 
 
+/* -------------------- */
+/* About Styling */
+/* -------------------- */
+.about__image {
+  width: 50%;
+  margin-bottom: 1rem;
+  max-width: 400px;
+}
+
+.technologies {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 500px;
+}
+
+.technologies__row{
+  display: flex;
+  flex-direction: column;
+}
+
+.technologies__item{
+  display: flex;
+  flex-direction: column;
+  border-image: var(--gradient);
+  border-width: 2px;
+  border-style: solid;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: .25em .25em
+}
+
+
+
+.technologies__item__image {
+  width: 24px;
+  height: 24px;
+  margin-bottom: .25em;
+}
+
+ .technologies__item--text {
+  line-height: .75em;
+  font-size: 0.50em;
+  font-weight: 600;
+  color: white;
+  margin-bottom: .25em;
+} 
+
+/* -------------------- */
+/* Media Queries */
+/* -------------------- */
 @media only screen and (min-width: 900px) {
   .header {
   font-size: 1.5rem;
@@ -223,47 +319,19 @@ body {
   width: 80%;
   max-width: 1500px;
 }
+
+.split{
+  flex-direction: row;
 }
-
-
-
-
-
-/* .section {
-  margin: 0 auto;
-  margin-bottom: 4rem;
-} */ 
-
-
+}
 
 
 /* .footer__text {
   /* font-size: 1rem;
 }
 
-.hero__text {
 
-}
 
-.navbar--text {
-  font-weight: 400;
-  font-size: 1rem;
-  transition: 0.25s;
-  text-decoration: none;
-}
-
-.navbar__list--item--link:hover {
-  color: var(--brand-key);
-  text-decoration: none;
-}
-
-.section--text {
-  font-weight: 300;
-  font-size: 1rem;
-  line-height: 1.75rem;
-  margin-bottom: 4rem;
-  max-width: 85ch;
-}
 .contact--text {
   font-weight: 300;
   font-size: 1rem;
@@ -272,81 +340,14 @@ body {
   max-width: 85ch;
 }
 
-.section--title {
-  position: relative;
-  font-weight: bolder;
-  font-size: 3rem;
-  margin: 3.5rem 0 2.5rem 0;
-  z-index: 1;
-}
 
-.section--title::after {
-  content: '';
-  position: absolute;
-  left: 25%;
-  top: 60%;
-  width: 85%;
-  height: 20px;
-  background-color: var(--section-title-highlight);
-  z-index: -1;
-}
-
-.navbar__list--item--link {
-  color: white;
-  text-decoration: none;
-}
-
-.highlight {
-  color: var(--section-title-highlight);
-}
-
-.technologies__item--text {
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: white;
-} */ */ */
+*/ */ */
 
 /* || header/navbar styling || */
 /* .navbar__list--item + .navbar__list--item {
   margin-left: 1rem;
 } */ */
 
-/* || hero styling || */
-/* .hero--section {
-  align-items: center;
-  min-height: 100vh;
-}
-
-*/
-
-/* || About Styling || */
-/* .about__image {
-  width: 50%;
-  margin-bottom: 1rem;
-  max-width: 400px;
-}
-
-.technologies {
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  max-width: 500px;
-}
-
-.technologies__item {
-  padding: 0.5rem 0.75rem;
-  align-items: center;
-  border-image: var(--gradient);
-  border-width: 2px;
-  border-style: solid;
-  height: 100%;
-  width: 100%;
-  margin-bottom: 1rem;
-}
-
-.technologies__item__image {
-  width: 36px;
-  height: 36px;
-}
 
 /* || Contact Styling || */
 /* .form__input {
