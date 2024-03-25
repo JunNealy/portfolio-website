@@ -323,6 +323,12 @@ body {
 .split{
   flex-direction: row;
 }
+
+.hero-text {
+  font-size: 2.5rem;
+  font-weight: 350;
+  line-height: 3rem;
+}
 }
 
 
