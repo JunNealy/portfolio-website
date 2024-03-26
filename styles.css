@@ -308,6 +308,10 @@ body {
   margin-bottom: .25em;
 } 
 
+/* -------------------- */
+/* Projects */
+/* -------------------- */
+
 .project__card {
   width: 270px;
   background-color: var(--header-bg);
@@ -337,6 +341,49 @@ body {
 .project__cta {
   display: block;
   padding-bottom: .25rem;
+}
+
+/* -------------------- */
+/* Contact */
+/* -------------------- */
+.contact__text{
+  max-width: 50ch;
+  margin-bottom: 1rem;
+}
+
+
+/* -------------------- */
+/* Footer Queries */
+/* -------------------- */
+#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 10rem;
+  background-color: var(--header-bg);
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__image {
+  height: 64px;
+  width: 64px;
+}
+
+.footer__links {
+  margin-bottom: 1em;
+}
+
+.footer__link {
+  text-decoration: none;
+}
+.footer__link + .footer__link {
+  margin-left: 1em;
 }
 
 /* -------------------- */
