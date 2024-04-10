@@ -280,6 +280,9 @@ body {
   max-width: 200px;
 }
 
+.about__text{
+  max-width: 60ch;
+}
 .technologies {
   display: flex;
   flex-direction: row;
@@ -423,15 +426,16 @@ body {
 
 .split{
   flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .split__div {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 width:100%;
 }
+
 
 
 .hero-text {
