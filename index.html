@@ -27,7 +27,7 @@
       href="./public/favicon/favicon-16x16.png?"
     />
     <link rel="manifest" href="public/favicon/site.webmanifest" />
-        <link
+    <link
       rel="shortcut icon"
       type="image/x-icon"
       href="./Public/favicon/favicon.ico"
@@ -38,281 +38,277 @@
 
   <body>
     <header class="header flex">
-      <nav class="navbar">
-        <ul class="navabr__list flex navbar--text">
-          <li class="navbar__list--item">
-            <a class="navbar__list--item--link" href="#hero">Home</a>
+      <nav class="nav flex">
+        <ul class="nav__list flex">
+          <li class="nav__item"><a class="nav__link" href="#hero">Home</a></li>
+          <li class="nav__item">
+            <a class="nav__link" href="#about">About</a>
           </li>
-          <li class="navbar__list--item">
-            <a class="navbar__list--item--link" href="#about">About</a>
+          <li class="nav__item">
+            <a class="nav__link" href="#projects">Projects</a>
           </li>
-          <li class="navbar__list--item">
-            <a class="navbar__list--item--link" href="#projects">Projects</a>
-          </li>
-          <li class="navbar__list--item">
-            <a class="navbar__list--item--link" href="#contact">Contact</a>
+          <li class="nav__item">
+            <a class="nav__link" href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
     </header>
-
     <canvas id="particles"></canvas>
-
-    <section class="hero--section flex" id="hero">
-      <div class="container flex row">
-        <p class="hero__text">
-          Hello, I'm <span class="hero__text highlight">Junypyr</span>.
-        </p>
-        <p class="hero__text">I'm a front end web developer.</p>
-
-        <a href="#about" class="hero__cta flex row">
-          <p class="cta__text">
-            View my work
-            <i class="fa-solid fa-arrow-down"></i>
-          </p>
-        </a>
-      </div>
-    </section>
-
-    <section class="section container flex row" id="about">
-      <h2 class="section--title flex">About</h2>
-      <div class="split-divs">
-        <div class="container flex row split">
-          <img
-            class="about__image"
-            src="./Public/image/profile-svgrepo-com.svg"
-            alt=""
-          />
-          <p class="section--text">
-            I'm a web developer commited to the philosophy of life-long
-            learning, with a deep passion for JavaScript, CSS, and all things
-            related to front end development. I find web developments unique
-            need for creativity, logic, and no shortage of new technologies to
-            learn drives my passion for the web and web devolopment. When I'm
-            not at my computer I like to spend my time reading, writing, and
-            playing table-top games.
-          </p>
+    <main id="main">
+      <section id="hero" class="section__container--hero">
+        <div class="hero-text">
+          <p>Hello, I'm <span class="highlight">Junypyr</span>.</p>
+          <p>I'm a front end web developer.</p>
         </div>
-
-        <div class="container technologies flex split">
-          <div class="technologies__row">
-            <div class="technologies__item flex row">
-              <img
-                class="technologies__item__image"
-                src="./Public/image/icons8-html5.svg"
-                alt="HTML 5 Logo"
-              />
-              <p class="technologies__item--text">HTML</p>
-            </div>
-            <div class="technologies__item flex row">
-              <img
-                class="technologies__item__image"
-                src="./Public/image/icons8-css3.svg"
-                alt="CSS 3 Logo"
-              />
-              <p class="technologies__item--text">CSS</p>
-            </div>
-            <div class="technologies__item flex row">
-              <img
-                class="technologies__item__image"
-                src="./Public/image/icons8-javascript.svg"
-                alt="JavaScript Logo"
-              />
-              <p class="technologies__item--text">JAVASCRIPT</p>
-            </div>
-          </div>
-          <div class="technologies__row">
-            <div class="technologies__item flex row">
-              <img
-                class="technologies__item__image"
-                src="./Public/image/icons8-react.svg"
-                alt="React Logo"
-              />
-              <p class="technologies__item--text">REACT</p>
-            </div>
-            <div class="technologies__item flex row">
-              <img
-                class="technologies__item__image"
-                src="./Public/image/icons8-nodejs.svg"
-                alt="Node.js Logo"
-              />
-              <p class="technologies__item--text">NODE.JS</p>
-            </div>
-            <div class="technologies__item flex row">
-              <img
-                class="technologies__item__image"
-                src="./Public/image/express.1eca086d2a78b4be3dd1f0a47b84b618 (Small).png"
-                alt="Express Logo"
-              />
-              <p class="technologies__item--text">EXPRESS.JS</p>
-            </div>
-            <div class="technologies__item flex row">
-              <img
-                class="technologies__item__image"
-                src="./Public/image/MONGOSQUARE.png"
-                alt="MongoDB Logo"
-              />
-              <p class="technologies__item--text">MONGODB</p>
-            </div>
-          </div>
-          <div class="technologies__row">
-            <div class="technologies__item flex row">
-              <img
-                class="technologies__item__image"
-                src="./Public/image/icons8-bootstrap-logo.svg"
-                alt="Bootstrap Logo"
-              />
-              <p class="technologies__item--text">BOOTSTRAP</p>
-            </div>
-            <div class="technologies__item flex row">
-              <img
-                class="technologies__item__image"
-                src="./Public/image/Git-Icon-1788C.svg"
-                alt="Bootstrap Logo"
-              />
-              <p class="technologies__item--text">GIT</p>
-            </div>
-            <div class="technologies__item flex row">
-              <img
-                class="technologies__item__image"
-                src="./Public/image/bootstrap.png"
-                alt="Bootstrap Logo"
-              />
-              <p class="technologies__item--text">HTMX</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="container flex row" id="projects">
-      <h2 class="section--title">Projects</h2>
-      <div class="project-container">
-        <div class="project">
-          <div class="project-image">
-            <img src="./Public//image/HooBank.png" alt="" />
-          </div>
-          <div class="project-text">
-            <p class="project-text__title">HooBank</p>
-            <p class="project-text__description">
-              A sleek brochure website, embodying modern design principles with
-              an intuitive mobile-native experience. Created with React,
-              Node.js, and Tailwind CSS."
+        <a href="#about" class="hero__cta"
+          >View my work <i class="fa-solid fa-arrow-down"></i
+        ></a>
+      </section>
+      <section id="about" class="section__container">
+        <h2 class="section__title">About</h2>
+        <div class="split">
+          <div class="split__div">
+            <img
+              class="about__image"
+              src="./Public/image/profile-svgrepo-com.svg"
+              alt="about image"
+            />
+            <p class="about__text">
+              I'm a web developer commited to the philosophy of life-long
+              learning, with a deep passion for JavaScript, CSS, and all things
+              related to front end development. I find web developments unique
+              need for creativity, logic, and no shortage of new technologies to
+              learn drives my passion for the web and web devolopment. When I'm
+              not at my computer I like to spend my time reading, writing, and
+              playing table-top games.
             </p>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              class="project-text__link"
-              href="https://junnealy.github.io/Ubank/"
-              >Live App
-            </a>
-
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              class="project-text__link"
-              href="https://github.com/JunNealy/Ubank"
-              >Learn More</a
-            >
+          </div>
+          <div class="split__div technologies section--text">
+            <div class="technologies__row">
+              <div class="technologies__item flex row">
+                <img
+                  class="technologies__item__image"
+                  src="./Public/image/icons8-html5.svg"
+                  alt="HTML 5 Logo"
+                />
+                <p class="technologies__item--text">HTML</p>
+              </div>
+              <div class="technologies__item flex row">
+                <img
+                  class="technologies__item__image"
+                  src="./Public/image/icons8-css3.svg"
+                  alt="CSS 3 Logo"
+                />
+                <p class="technologies__item--text">CSS</p>
+              </div>
+              <div class="technologies__item flex row">
+                <img
+                  class="technologies__item__image"
+                  src="./Public/image/icons8-javascript.svg"
+                  alt="JavaScript Logo"
+                />
+                <p class="technologies__item--text">JAVASCRIPT</p>
+              </div>
+            </div>
+            <div class="technologies__row">
+              <div class="technologies__item flex row">
+                <img
+                  class="technologies__item__image"
+                  src="./Public/image/icons8-react.svg"
+                  alt="React Logo"
+                />
+                <p class="technologies__item--text">REACT</p>
+              </div>
+              <div class="technologies__item flex row">
+                <img
+                  class="technologies__item__image"
+                  src="./Public/image/icons8-nodejs.svg"
+                  alt="Node.js Logo"
+                />
+                <p class="technologies__item--text">NODE.JS</p>
+              </div>
+              <div class="technologies__item flex row">
+                <img
+                  class="technologies__item__image"
+                  src="./Public/image/express.1eca086d2a78b4be3dd1f0a47b84b618 (Small).png"
+                  alt="Express Logo"
+                />
+                <p class="technologies__item--text">EXPRESS.JS</p>
+              </div>
+              <div class="technologies__item flex row">
+                <img
+                  class="technologies__item__image"
+                  src="./Public/image/MONGOSQUARE.png"
+                  alt="MongoDB Logo"
+                />
+                <p class="technologies__item--text">MONGODB</p>
+              </div>
+            </div>
+            <div class="technologies__row">
+              <div class="technologies__item flex row">
+                <img
+                  class="technologies__item__image"
+                  src="./Public/image/icons8-bootstrap-logo.svg"
+                  alt="Bootstrap Logo"
+                />
+                <p class="technologies__item--text">BOOTSTRAP</p>
+              </div>
+              <div class="technologies__item flex row">
+                <img
+                  class="technologies__item__image"
+                  src="./Public/image/Git-Icon-1788C.svg"
+                  alt="Bootstrap Logo"
+                />
+                <p class="technologies__item--text">GIT</p>
+              </div>
+              <div class="technologies__item flex row">
+                <img
+                  class="technologies__item__image"
+                  src="./Public/image/bootstrap.png"
+                  alt="Bootstrap Logo"
+                />
+                <p class="technologies__item--text">HTMX</p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="project-container">
-        <div class="project">
-          <div class="project-image">
-            <img src="./Public//image/the-planets.png" alt="" />
+      </section>
+      <section id="projects" class="section__container">
+        <h2 class="section__title">Projects</h2>
+        <div class="card__container">
+          <div class="project__card">
+            <img
+              class="project__image"
+              src="./Public//image/HooBank.png"
+              alt=""
+            />
+            <div class="project__text">
+              <p class="project__title">HooBank</p>
+              <p class="project__description">
+                A sleek brochure website, embodying modern design principles
+                with an intuitive mobile-native experience. Created with React,
+                Node.js, and Tailwind CSS.
+              </p>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project__cta"
+                href="https://junnealy.github.io/Ubank/"
+                >Live App
+              </a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project__cta"
+                href="https://github.com/JunNealy/Ubank"
+                >Learn More</a
+              >
+            </div>
           </div>
-          <div class="project-text">
-            <p class="project-text__title">Our Solar System</p>
-            <p class="project-text__description">
-              Exploreour solar system on this React-powered educational website,
-              diving into captivating details about each planet.
-            </p>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              class="project-text__link"
-              href="https://junnealy.github.io/the-planets/"
-              >Live App
-            </a>
-
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              class="project-text__link"
-              href="https://github.com/JunNealy/the-planets"
-              >Learn More</a
-            >
+          <div class="project__card">
+            <img
+              class="project__image"
+              src="./Public/image/the-planets.png"
+              alt=""
+            />
+            <div class="project__text">
+              <p class="project__title">The Planets</p>
+              <p class="project__description">
+                Explore out solar system on this React-powered educational
+                website, diving into captivating details about each planet.
+                Complete with helpful reference images and direct links to
+                sources.
+              </p>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project__cta"
+                href="https://junnealy.github.io/the-planets/"
+                >Live App
+              </a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project__cta"
+                href="https://github.com/JunNealy/the-planets"
+                >Learn More</a
+              >
+            </div>
+          </div>
+          <div class="project__card">
+            <img
+              class="project__image"
+              src="./Public//image/password-generator.png"
+              alt=""
+            />
+            <div class="project__text">
+              <p class="project__title">Password Generator</p>
+              <p class="project__description">
+                A password generator equipped with customizable parameters that
+                provides feedback on the potential security levels of the
+                generated passwords.
+              </p>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project__cta"
+                href="https://junnealy.github.io/password-generator/"
+                >Live App
+              </a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project__cta"
+                href="https://github.com/JunNealy/password-generator"
+                >Learn More</a
+              >
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section container" id="contact">
-      <div class="container flex row">
-        <h2 class="section--title">Contact</h2>
-
-        <p class="contact--text">
+      <section id="contact" class="section__container">
+        <h2 class="section__title">Contact</h2>
+        <p class="contact__text">
           Have a question or want to work together? Please reach out and I will
           get back to you as soon as possible.
         </p>
-        <a href="mailto:junypyr@gmail.com" class="contact__cta flex row">
+        <a href="mailto:junypyr@gmail.com" class="hero__cta">
           <p class="cta__text">
             Send me an Email
             <i class="fa-solid fa-envelope ml-1"></i>
           </p>
         </a>
-        <!-- <form class="contact" action="">
-          <input
-            class="form__input"
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Name"
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="footer__links">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footer__link"
+          href="https://github.com/JunNealy"
+        >
+          <img
+            class="footer__image"
+            src="./Public/image/github-mark-white.png"
+            alt="github"
           />
-          <input
-            class="form__input"
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email"
+        </a>
+        <a class="footer__link" href="mailto:junypyr@gmail.com">
+          <img
+            class="footer__image"
+            src="./Public/image/email-light.png"
+            alt="Email"
           />
-          <textarea
-            class="form__input"
-            name="message"
-            id="message"
-            rows="10"
-            placeholder="Message"
-          ></textarea>
-        </form> -->
+        </a>
       </div>
-    </section>
-
-    <footer class="footer flex">
-      <div class="container flex row">
-        <div class="footer__links">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            class="footer__link"
-            href="https://github.com/JunNealy"
-          >
-            <img
-              class="footer__image"
-              src="./Public/image/github-mark-white.png"
-              alt="github"
-            />
-          </a>
-          <a class="footer__link" href="mailto:junypyr@gmail.com">
-            <img
-              class="footer__image"
-              src="./Public/image/email-light.png"
-              alt="Email"
-            />
-          </a>
-        </div>
-        <p class="footer__text">Junypyr Nealy ©2023</p>
-      </div>
+      <p>
+        Junypyr Nealy
+        <script>
+          document.write(/\d{4}/.exec(Date())[0]);
+        </script>
+      </p>
     </footer>
   </body>
   <script src="./particles.js"></script>
