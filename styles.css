@@ -329,10 +329,12 @@ body {
 /* -------------------- */
 
 .project__card {
-  width: 270px;
+  width: 90%;
+  max-width: 300px;
   background-color: var(--header-bg);
   box-shadow: black;
   border-radius: 15px;
+  margin: 2rem 2rem;
 }
 
 .project__image {
@@ -355,8 +357,19 @@ body {
 }
 
 .project__cta {
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit;
   display: block;
-  padding-bottom: .25rem;
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+}
+.project__cta:hover {
+  color: var(--brand-key)
+}
+.project__cta + .project__cta {
+  padding-top: 0;
+  padding-bottom: 2rem;
 }
 
 /* -------------------- */
@@ -413,6 +426,13 @@ body {
   color: white;
   margin-bottom: .25em;
 } 
+
+.card__container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
 }
 
 @media only screen and (min-width: 992px) {
